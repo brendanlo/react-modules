@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import foodArray from './foods';
+import { choice, remove } from './helper';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
