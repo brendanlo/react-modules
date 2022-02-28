@@ -9,7 +9,10 @@ function choice(items) {
 /** removes the first matching item from items, if item exists, and returns it. 
  * Otherwise returns undefined */
 function remove(items, item) {
-  return items.find(item);
+  let fruitIndex = items.indexOf(item);
+  let fruit = items[fruitIndex];
+  items.splice(fruitIndex,1);
+  return fruit;
 }
 
 export { choice, remove };
